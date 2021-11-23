@@ -4,16 +4,31 @@
     <!-- header -->
     <Header/>
 
+    <!-- main -->
+    <main>
+
+      <!-- banner nero -->
+      <Banner/>
+
+      <!-- nav -->
+      <Nav/>
+
+    </main>
+
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue';
+import Banner from '@/components/Banner.vue';
+import Nav from '@/components/Nav.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
+    Banner,
+    Nav,
 
   }
 }
@@ -31,9 +46,6 @@ export default {
 .container {
   width: 70%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 </style>

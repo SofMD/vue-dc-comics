@@ -61,6 +61,9 @@ section {
 
 .container {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .head-logo {
     width: 80px;
@@ -71,7 +74,7 @@ section {
 
 
 ul {
-    font-size: 13px;
+    font-size: 14px;
     list-style: none;
     text-transform: uppercase;
     font-weight: 500;
@@ -83,11 +86,16 @@ ul {
         a {
             color: black;
             text-decoration: none;
+
+            &:hover {
+                color: #007ce6;
+            }
+
+            
         }
     }
 
 }
-/* sposta dentro */
 
 
 
