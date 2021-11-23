@@ -1,24 +1,24 @@
 <template>
   <section>
       <div class="container">
-          <ul>
-                <li>
+          <ul class="d-f li-st t-t-upp ">
+                <li class="d-f al-it-cent c-pointer">
                     <img src="@/assets/buy-comics-digital-comics.png" alt="">
                     <span>digital comics</span>
                 </li>
-                <li>
+                <li class="d-f al-it-cent c-pointer">
                     <img src="@/assets/buy-comics-merchandise.png" alt="">
                     <span>dc merchandise</span>
                 </li>
-                <li>
+                <li class="d-f al-it-cent c-pointer">
                     <img src="@/assets/buy-comics-subscriptions.png" alt="">
                     <span>subscription</span>
                 </li>
-                <li>
+                <li class="d-f al-it-cent c-pointer">
                     <img src="@/assets/buy-comics-shop-locator.png" alt="">
                     <span>comic shop locator</span>
                 </li>
-                <li>
+                <li class="d-f al-it-cent c-pointer ">
                     <img src="@/assets/buy-dc-power-visa.svg" alt="">
                     <span>dc power visa</span>
                 </li>
@@ -37,34 +37,26 @@ export default {
 
 
 <style scoped lang="scss">
+@import '@/style/variables.scss';
 
 section {
-    background-color: #0082f3;
+    background-color: $base-blue;
     color: white;
     padding: 40px 0;
 
     .container {
 
         ul{
-            list-style: none;
-            display: flex;
             justify-content: space-around;
 
-            li{
-                text-transform: uppercase;
-                display: flex;
-                align-items: center;
-
-
-                img{
-                    width: 50px;
-                }
-
-                span {
-                    margin-left: 15px;
-                    font-size: 15px;
-                }
+            img{
+                 width: 50px;
             }
+            span {
+                 margin-left: 15px;
+                 font-size: 15px;
+            }
+    
         }
     }
 }

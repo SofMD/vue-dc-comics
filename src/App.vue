@@ -13,7 +13,13 @@
       <!-- nav -->
       <Nav/>
 
+      <!-- hero -->
+      <Hero/>
+      
+
     </main>
+
+    <Footer/>
 
   </div>
 </template>
@@ -22,6 +28,8 @@
 import Header from '@/components/Header.vue';
 import Banner from '@/components/Banner.vue';
 import Nav from '@/components/Nav.vue';
+import Hero from '@/components/Hero.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'App',
@@ -29,12 +37,17 @@ export default {
     Header,
     Banner,
     Nav,
+    Hero,
+    Footer,
 
   }
 }
 </script>
 
 <style lang="scss">
+
+@import '@/style/utility.scss';
+@import '@/style/variables.scss';
 
 * {
   margin: 0;

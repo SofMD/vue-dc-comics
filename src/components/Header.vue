@@ -1,6 +1,6 @@
 <template>
   <section>
-      <div class="container">
+      <div class="container d-f sp-bw al-it-cent ">
           <!-- left -->
           <div>
               <img class="head-logo" src="@/assets/dc-logo.png" alt="">
@@ -8,36 +8,36 @@
           <!-- right -->
           <div>
               <!-- lista -->
-              <ul>
+              <ul class="d-f li-st t-t-upp ">
                   <li>
-                      <a href="#">characters</a>
+                      <a href="#" class="tx-dec">characters</a>
                   </li>
                   <li>
-                      <a href="#">comics</a>
+                      <a href="#" class="tx-dec">comics</a>
                   </li>
                   <li>
-                      <a href="#">movies</a>
+                      <a href="#" class="tx-dec">movies</a>
                   </li>
                   <li>
-                      <a href="#">tv</a>
+                      <a href="#" class="tx-dec">tv</a>
                   </li>
                   <li>
-                      <a href="#">games</a>
+                      <a href="#" class="tx-dec">games</a>
                   </li>
                   <li>
-                      <a href="#">collectibles</a>
+                      <a href="#" class="tx-dec">collectibles</a>
                   </li>
                   <li>
-                      <a href="#">videos</a>
+                      <a href="#" class="tx-dec">videos</a>
                   </li>
                   <li>
-                      <a href="#">fans</a>
+                      <a href="#" class="tx-dec">fans</a>
                   </li>
                   <li>
-                      <a href="#">news</a>
+                      <a href="#" class="tx-dec">news</a>
                   </li>
                   <li>
-                      <a href="#">shop</a>
+                      <a href="#" class="tx-dec">shop</a>
                   </li>
               </ul>
           </div>
@@ -53,17 +53,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/style/variables.scss';
 
 section {
-    width: 100vw;
     background-color: white;
 }
 
 .container {
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     .head-logo {
     width: 80px;
@@ -72,31 +69,23 @@ section {
 }
 
 
-
 ul {
     font-size: 14px;
-    list-style: none;
-    text-transform: uppercase;
     font-weight: 500;
-    display: flex;
 
     li {
     margin: 0 15px;
 
         a {
             color: black;
-            text-decoration: none;
 
             &:hover {
-                color: #007ce6;
+                color: $base-blue;
             }
-
-            
         }
     }
 
 }
-
 
 
 </style>
