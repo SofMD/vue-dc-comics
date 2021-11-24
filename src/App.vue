@@ -8,14 +8,11 @@
     <main>
 
       <!-- banner nero -->
-      <Banner/>
-
+      <Main/>
       <!-- nav -->
       <Nav/>
-
-      <!-- hero -->
-      <Hero/>
-      
+      <!-- Banner -->
+      <Banner/> 
 
     </main>
 
@@ -26,18 +23,18 @@
 
 <script>
 import Header from '@/components/Header.vue';
-import Banner from '@/components/Banner.vue';
+import Main from '@/components/Main.vue';
 import Nav from '@/components/Nav.vue';
-import Hero from '@/components/Hero.vue';
+import Banner from '@/components/Banner.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Banner,
+    Main,
     Nav,
-    Hero,
+    Banner,
     Footer,
 
   }
@@ -53,7 +50,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .container {

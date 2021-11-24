@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="vw ">
       <div class="container d-f sp-bw al-it-cent ">
           <!-- left -->
           <div>
@@ -9,35 +9,8 @@
           <div>
               <!-- lista -->
               <ul class="d-f li-st t-t-upp ">
-                  <li>
-                      <a href="#" class="tx-dec">characters</a>
-                  </li>
-                  <li>
-                      <a href="#" class="tx-dec">comics</a>
-                  </li>
-                  <li>
-                      <a href="#" class="tx-dec">movies</a>
-                  </li>
-                  <li>
-                      <a href="#" class="tx-dec">tv</a>
-                  </li>
-                  <li>
-                      <a href="#" class="tx-dec">games</a>
-                  </li>
-                  <li>
-                      <a href="#" class="tx-dec">collectibles</a>
-                  </li>
-                  <li>
-                      <a href="#" class="tx-dec">videos</a>
-                  </li>
-                  <li>
-                      <a href="#" class="tx-dec">fans</a>
-                  </li>
-                  <li>
-                      <a href="#" class="tx-dec">news</a>
-                  </li>
-                  <li>
-                      <a href="#" class="tx-dec">shop</a>
+                  <li v-for="(link, index) in HeaderLink" :key="`link-${index}`">
+                      <a href="#" class="tx-dec">{{link.name}}</a>
                   </li>
               </ul>
           </div>
@@ -49,6 +22,45 @@
 <script>
 export default {
     name: 'Header',
+    data() {
+        return{
+            HeaderLink: [
+                {
+                    name: 'characters',
+                },
+                {
+                    name: 'comics',
+                },
+                {
+                    name: 'movies',
+                },
+                {
+                    name: 'tv',
+                },
+                {
+                    name: 'games',
+                },
+                {
+                    name: 'collectibles',
+                },
+                {
+                    name: 'videos',
+                },
+                {
+                    name: 'fans',
+                },
+                {
+                    name: 'news',
+                },
+                {
+                    name: 'news',
+                },
+                {
+                    name: 'shop',
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -71,7 +83,7 @@ section {
 
 ul {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
 
     li {
     margin: 0 15px;

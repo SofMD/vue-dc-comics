@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="vw">
       <div class="container sp-bw d-f">
           <!-- left -->
           <div>
