@@ -1,6 +1,6 @@
 <template>
 
-<div>
+<div class="c-pointer">
     <img :src="thumb" :alt="series">
     <div class="t-t-upp text">{{series}}</div>
 </div>
