@@ -1,4 +1,5 @@
 // UTILITY
+@import '@/style/variables.scss';
 
 .d-f {
     display: flex;
@@ -31,4 +32,16 @@
 
 .vw {
     width: 100vw;
+}
+
+.main-button{
+    color: white;
+    font-weight: bold;
+    background-color: $base-blue;
+    border: none;
+    padding: 10px 60px;
+}
+
+.main-button:hover{
+    background-color: #2398ff;
 }

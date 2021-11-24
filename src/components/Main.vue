@@ -1,5 +1,10 @@
 <template>
-  <section class="vw ">
+  <section class="vw">
+
+      <div class="hero vw">
+        <button class="t-t-upp main-button">current series</button>
+      </div>
+
       <div class="container">
 
         <ul class="boxes li-st">
@@ -7,15 +12,19 @@
             <!-- <img :src="product.thumb" :alt="product.series">
             <div class="t-t-upp">{{product.series}}</div> -->
             <Card :thumb="product.thumb" :series="product.series"/>
-
           </li>
         </ul>
+
+        <div class="btn-container">
+          <button class="t-t-upp main-button">load more</button>
+        </div>
+        
       </div>
   </section>
 </template>
 
 <script>
-import Card from '@/components/Card.vue'
+import Card from '@/components/Card.vue';
 
 export default {
     name: 'Main',
@@ -107,20 +116,40 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/style/variables.scss';
 
 section {
   background-color: #222222;
 
+  .hero{
+    height: 400px;
+    background-image: url('../assets/jumbotron.jpg');
+    position: relative;
+
+    button{
+      font-size: 1.7rem;
+      padding: 10px 30px;
+      position: absolute;
+      bottom: -30px;
+      left: 14%;
+    }
+  }
+
   .container{
     color: white;
-    padding: 55px 0;
+    padding: 40px 0 20px 0;
 
     .boxes{
       justify-content: space-between;
       display: flex;
       flex-wrap: wrap;
     }
-  }
+
+    .btn-container{
+      display: flex;
+      justify-content: center; 
+    }  
+  }   
 }
 
 </style>

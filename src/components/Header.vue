@@ -1,8 +1,8 @@
 <template>
-  <section class="vw ">
+  <section class="vw">
       <div class="container d-f sp-bw al-it-cent ">
           <!-- left -->
-          <div>
+          <div class="vw">
               <img class="head-logo" src="@/assets/dc-logo.png" alt="">
           </div>
           <!-- right -->

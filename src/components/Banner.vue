@@ -1,5 +1,5 @@
 <template>
-  <section class="vw ">
+  <section class="vw">
 
       <div class="container d-f sp-bw ">
           <!-- left -->
@@ -60,7 +60,7 @@
           </div>
 
           <!-- right -->
-          <div class="hero-right">
+          <div class="hero-right vw">
               <!-- aggiungi immahgine -->
               <img src="'@/assets/dc-logo-bg.png'" alt="">
           </div>

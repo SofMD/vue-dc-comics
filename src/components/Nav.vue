@@ -1,5 +1,5 @@
 <template>
-  <section class="vw ">
+  <section class="vw">
       <div class="container">
           <ul class="d-f li-st t-t-upp ">
                 <li class="d-f al-it-cent c-pointer">
